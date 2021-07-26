@@ -23,7 +23,7 @@ import java.util.Observer;
 
 public class Controller implements Observer {
     ServerSocket serverSocket = null;
-    private final int PORT = 3001;
+    private final int PORT = 3000;
     private ArrayList<Nodo> poolSocket = new ArrayList<>();
 
     @FXML
@@ -40,7 +40,7 @@ public class Controller implements Observer {
 
     @FXML
     void OpenServerOnMouseClicked(MouseEvent event) {
-        byte[] ipBytes = {(byte)192,(byte)168,(byte)1, (byte)68 };
+        byte[] ipBytes = {(byte)192,(byte)168,(byte)100, (byte)30};
         InetAddress ip = null;
 
         try {
